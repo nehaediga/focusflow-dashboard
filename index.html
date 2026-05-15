@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FocusFlow Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="dashboard">
+
+    <div class="top-bar">
+      <h1>FocusFlow</h1>
+      <div id="clock"></div>
+    </div>
+
+    <div class="grid">
+
+      <div class="card greeting">
+        <h2 id="greeting">Good Evening</h2>
+        <p>Stay productive and focused today ✨</p>
+      </div>
+
+      <div class="card progress">
+        <h3>Daily Progress</h3>
+
+        <div class="progress-box">
+          <p>UI Design</p>
+          <div class="progress-bar">
+            <span style="width: 80%"></span>
+          </div>
+        </div>
+
+        <div class="progress-box">
+          <p>JavaScript</p>
+          <div class="progress-bar">
+            <span style="width: 65%"></span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="card todo">
+        <h3>Today's Tasks</h3>
+
+        <div class="todo-input">
+          <input type="text" id="taskInput" placeholder="Add task">
+          <button onclick="addTask()">Add</button>
+        </div>
+
+        <ul id="taskList"></ul>
+      </div>
+
+      <div class="card quote">
+        <h3>Quote of the Day</h3>
+        <p>"Success starts with consistency."</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
